@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Staff Portal | Dr Soyemi</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark">DS</span><div><strong>Dr Soyemi</strong><small>Staff Results Portal</small></div></div>
+  <a href="index.html" class="admin-link">Patient Portal</a>
+</header>
+<main class="admin-shell">
+  <div class="eyebrow">STAFF DEMO PORTAL</div>
+  <h1>Create a secure result notification.</h1>
+  <p class="intro">This prototype creates a patient record and generates the message/link that staff can send through WhatsApp or SMS.</p>
+
+  <section class="admin-grid">
+    <form id="resultForm" class="panel">
+      <h2>Patient & result</h2>
+      <label>Patient name<input name="patient" required placeholder="Patient full name"></label>
+      <label>Phone number<input name="phone" required placeholder="+234 812 141 0721"></label>
+      <label>Result type<input name="type" required placeholder="e.g. Gynaecology Laboratory Report"></label>
+      <label>Result date<input name="date" type="date" required></label>
+      <label>Doctor's note<textarea name="note" rows="5" placeholder="Optional note for the patient"></textarea></label>
+      <label>Report / file URL<input name="fileUrl" placeholder="https://secure-server.example/report.pdf"></label>
+      <button>Create Secure Link →</button>
+    </form>
+
+    <section class="panel">
+      <h2>Notification</h2>
+      <div id="created" class="empty">Create a result to generate a patient link.</div>
+    </section>
+  </section>
+
+  <div class="warning">Production note: do not store medical records in browser localStorage. Use an encrypted server/database, authenticated staff accounts, expiring signed links, access logging, backups, and a compliant SMS/WhatsApp provider.</div>
+</main>
+<footer>Staff access should be restricted to authorised clinic personnel.</footer>
+<script src="app.js"></script>
+</body>
+</html>

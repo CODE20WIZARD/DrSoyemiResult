@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr Soyemi | Patient Results Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark">DS</span><div><strong>Dr Soyemi</strong><small>Patient Results Portal</small></div></div>
+  <a href="admin.html" class="admin-link">Staff Portal</a>
+</header>
+
+<main class="shell">
+  <section class="hero">
+    <div class="eyebrow">SECURE PATIENT ACCESS</div>
+    <h1>Your results.<br><span>Private and easy to access.</span></h1>
+    <p>Enter the secure access code sent to your phone by the hospital or clinic. You can view your result online without downloading an app.</p>
+  </section>
+
+  <section class="access-card">
+    <div class="card-icon">✓</div>
+    <h2>View your result</h2>
+    <p>Enter the access code from your SMS or WhatsApp message.</p>
+    <form id="accessForm">
+      <label for="code">Secure access code</label>
+      <input id="code" name="code" placeholder="e.g. DS-2026-001" autocomplete="off" required>
+      <button>View Result →</button>
+    </form>
+    <div id="message" class="message"></div>
+    <div class="privacy">🔒 Your result should only be accessed by you or an authorised person.</div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div><b>01</b><h3>Receive a message</h3><p>The clinic sends your secure result link or access code by SMS or WhatsApp.</p></div>
+      <div><b>02</b><h3>Open your result</h3><p>Use the secure link or enter your code on this portal.</p></div>
+      <div><b>03</b><h3>Review securely</h3><p>Your result page shows the report and important patient instructions.</p></div>
+    </div>
+  </section>
+</main>
+<footer>© <span id="year"></span> Dr Adeoye Olakunle Soyemi · Patient Results Portal</footer>
+<script src="app.js"></script>
+</body>
+</html>
